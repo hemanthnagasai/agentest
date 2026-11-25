@@ -24,6 +24,7 @@ python3 -m venv .venv && . .venv/bin/activate && pip install -q -e .
 | [`failure-lab/`](failure-lab/) | One public agent example, one tested failure: reproduction, observed behaviour, the check that catches it and a regression test | see its [README](failure-lab/README.md) |
 | [`first_trace/`](first_trace/) | A three-span hand-written OTLP/JSON trace: a write without its confirmation flag | see its [README](first_trace/README.md) |
 | [`otel_plain/`](otel_plain/) | Emit an OpenTelemetry GenAI trace with the standard library, plus an A2A AgentCard and MCP tools list | `python examples/otel_plain/emit_trace.py` |
+| [`pytest_plugin/`](pytest_plugin/) | Judge a recorded trace inside pytest with the pytest-agentest plugin: assert verdicts, or print a report after the run | `pytest examples/pytest_plugin -q` (needs `pip install pytest-agentest`) |
 | [`langgraph_import/`](langgraph_import/) | Import LangGraph / LangChain message lists | `python examples/langgraph_import/test_langgraph.py` |
 | [`smolagents_import/`](smolagents_import/) | Import smolagents memory steps; same verdicts as the LangGraph example | see its [README](smolagents_import/README.md) |
 | [`open_agent_api_import/`](open_agent_api_import/) | Import offline approval outcomes and catch a missing grant | see its [README](open_agent_api_import/README.md) |
